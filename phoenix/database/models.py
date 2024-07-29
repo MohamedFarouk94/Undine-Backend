@@ -8,6 +8,7 @@ class Project(models.Model):
 	description = models.TextField(blank=True)
 	url = models.CharField(max_length=255, null=True)
 	image_url = models.CharField(max_length=255, null=True)
+	date_created = models.DateField(auto_now_add=True)
 
 	def to_dict(self):
 		return {
@@ -15,5 +16,6 @@ class Project(models.Model):
 			'name': self.name,
 			'description': self.description,
 			'url': self.url,
-			'image_url': self.image_url
+			'image_url': self.image_url,
+			'date_created': self.date_created
 		}
