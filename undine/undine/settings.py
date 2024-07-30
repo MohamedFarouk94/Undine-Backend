@@ -28,7 +28,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'undine.onrender.com',
-    'unidine.pythonanywhere.com'
+    'undine.pythonanywhere.com'
 ]
 
 
